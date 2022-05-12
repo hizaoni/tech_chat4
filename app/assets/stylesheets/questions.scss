@@ -1,3 +1,84 @@
-// Place all the styles related to the questions controller here.
-// They will automatically be included in application.css.
-// You can use Sass (SCSS) here: http://sass-lang.com/
+/******************************************** 
+ リセット用
+*********************************************/
+* {
+  box-sizing: border-box;
+}
+
+html,
+body,
+ul,
+li,
+h1,
+h2,
+p,
+div {
+  margin: 0;
+  padding: 0;
+}
+
+.main{
+  height:calc(100vh - 65px);
+  background-color: #F2F2F3;
+  display: flex;
+  justify-content: center;
+}
+
+.questions{
+  padding-top: 90px;
+}
+
+.question{
+  width: 700px;
+  height: 100px;
+  display: flex;
+  margin-bottom: 25px;
+  border-radius: 5px 0 0 5px;
+}
+
+.comment_count{
+  background-color: #1C3667;
+  width: 70px;
+  padding-top: 20px;
+  border-radius: 5px 0 0 5px;
+}
+
+.count{
+  font-size: 26px;
+  color: #FFFFFF;
+  text-align: center;
+  line-height: 38px;
+
+}
+
+.text_comment{
+  font-size: 11px;
+  color: #FFFFFF;
+  text-align: center;
+  line-height: 16px;
+}
+
+.question_main{
+  width: calc(700px - 70px);
+  background-color: #FFFFFF;
+  padding: 10px 15px;
+}
+
+.question_title_name{
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.question_title{
+  width: 500px;
+  font-size: 14px;
+}
+
+.question_name{
+  font-size: 12px;
+}
+
+.question_content{
+  font-size: 12px;
+}
