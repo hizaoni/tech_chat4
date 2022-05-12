@@ -1,6 +1,30 @@
-<%= link_to "新規質問投稿", new_question_path %>
-<% @questions.each do |q| %>
-投稿者：<%= q.name %><br>
-タイトル：<%= q.title %><br>
-内容：<%= q.content %><br><br>
-<%end%>
+
+
+
+
+
+<div class = main>
+  <div class=questions>
+  <% @questions.each do |q| %>
+    <div class=question>
+      <div class=comment_count>
+        <div class=count>0</div>
+        <div class=text_comment>comment</div>
+      </div>
+      <div class=question_main>
+        <div class = question_title_name>
+          <div class = question_title>
+            <%= q.title %>
+          </div>
+          <div class = question_name>
+            <%= q.name %>
+          </div>
+        </div>
+        <div class = question_content>
+          <%= q.content %>
+        </div>
+      </div>
+    </div>
+  <%end%>
+  </div>
+</div>
